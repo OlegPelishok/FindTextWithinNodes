@@ -14,25 +14,24 @@ namespace FindTextWithinNodes
         {
             StreamReader fs = new StreamReader(@"C:\1.txt");
             string s = string.Empty;
+            string TheEnd = string.Empty;
             List<string> list = new List<string>();
+
             while (s != null)
             {
                 s = fs.ReadLine();
                 list.Add(s);
-            }
-            foreach (var str in list)
-            {
-                if (str != null)
+                if (s!=null)
                 {
-                    string match = Regex.Match(str, "(?<=<value>)(.*)(?=</value>)").ToString();
+                    string match = Regex.Match(s, "(?<=<value>)(.*)(?=</value>)").ToString();
                     Console.WriteLine(match);
                 }
                 else
                 {
-                    Console.WriteLine("The END");
+                    Console.WriteLine(TheEnd);
                 }
-                
             }
+
         }
     }
 }
