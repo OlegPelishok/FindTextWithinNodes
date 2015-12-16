@@ -1,0 +1,6 @@
+C:\Users\Support3\Desktop\FindTextWithinNodes\FindTextWithinNodes\bin\Debug\FindTextWithinNodes.exe.config
+C:\Users\Support3\Desktop\FindTextWithinNodes\FindTextWithinNodes\obj\Debug\FindTextWithinNodes.csprojResolveAssemblyReference.cache
+C:\Users\Support3\Desktop\FindTextWithinNodes\FindTextWithinNodes\bin\Debug\FindTextWithinNodes.exe
+C:\Users\Support3\Desktop\FindTextWithinNodes\FindTextWithinNodes\bin\Debug\FindTextWithinNodes.pdb
+C:\Users\Support3\Desktop\FindTextWithinNodes\FindTextWithinNodes\obj\Debug\FindTextWithinNodes.exe
+C:\Users\Support3\Desktop\FindTextWithinNodes\FindTextWithinNodes\obj\Debug\FindTextWithinNodes.pdb
