@@ -12,7 +12,13 @@ namespace FindTextWithinNodes
     {
         static void Main(string[] args)
         {
-            StreamReader fs = new StreamReader(@"C:\1.txt");
+            Console.WriteLine("Enter file path/name:");
+            string source;
+            source = Console.ReadLine();
+            Console.WriteLine("Enter sestination file path/name");
+            string destination;
+            destination = Console.ReadLine();
+            StreamReader fs = new StreamReader(source);
             string s = string.Empty;
             string TheEnd = string.Empty;
             List<string> list = new List<string>();
@@ -20,18 +26,26 @@ namespace FindTextWithinNodes
             while (s != null)
             {
                 s = fs.ReadLine();
-                list.Add(s);
                 if (s!=null)
                 {
                     string match = Regex.Match(s, "(?<=<value>)(.*)(?=</value>)").ToString();
+                    list.Add(match);
                     Console.WriteLine(match);
                 }
                 else
                 {
                     Console.WriteLine(TheEnd);
                 }
+
             }
 
+            using (StreamWriter sw = new StreamWriter(destination))
+            {
+                foreach (var l in list)
+                {
+                    sw.WriteLine(l);
+                }
+            }
         }
     }
 }
